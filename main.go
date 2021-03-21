@@ -1,10 +1,11 @@
 package main
 
 import (
-	"coffeapp/handlers"
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/dionarya23/coffe-app-backend/handlers"
 
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
