@@ -14,10 +14,10 @@ func initializeRouter() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/api/v1/coffes", handlers.GetCoffes).Methods("GET")
-	r.HandleFunc("/coffe/{id}", handlers.GetCoffe).Methods("GET")
-	r.HandleFunc("/coffe", handlers.CreateCoffe).Methods("POST")
-	r.HandleFunc("/coffe/{id}", handlers.UpdateCoffe).Methods("PUT")
-	r.HandleFunc("/coffe/{id}", handlers.DeleteCoffe).Methods("DELETE")
+	r.HandleFunc("/api/v1/coffe/{id}", handlers.GetCoffe).Methods("GET")
+	r.HandleFunc("/api/v1/coffe", handlers.CreateCoffe).Methods("POST")
+	r.HandleFunc("/api/v1/coffe/{id}", handlers.UpdateCoffe).Methods("PUT")
+	r.HandleFunc("/api/v1/coffe/{id}", handlers.DeleteCoffe).Methods("DELETE")
 
 	log.Fatal(http.ListenAndServe(os.Getenv("PORT"), r))
 }
