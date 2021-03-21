@@ -1,6 +1,7 @@
 module github.com/dionarya23/coffe-app-backend
 
-go 1.14
+// +heroku goVersion go1.15
+go 1.15
 
 require (
 	github.com/Bowery/prompt v0.0.0-20190916142128-fa8279994f75 // indirect
