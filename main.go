@@ -20,7 +20,7 @@ func initializeRouter() {
 	r.HandleFunc("/api/v1/coffe/{id}", handlers.UpdateCoffe).Methods("PUT")
 	r.HandleFunc("/api/v1/coffe/{id}", handlers.DeleteCoffe).Methods("DELETE")
 
-	log.Fatal(http.ListenAndServe(os.Getenv("PORT"), r))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), r))
 }
 
 func main() {
