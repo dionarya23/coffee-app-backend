@@ -1,4 +1,4 @@
-module coffeapp
+module github.com/dionarya23/coffe-app-backend
 
 go 1.15
 
