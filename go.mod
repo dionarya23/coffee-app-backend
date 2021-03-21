@@ -1,6 +1,6 @@
 module github.com/dionarya23/coffe-app-backend
 
-go 1.15
+go 1.14
 
 require (
 	github.com/gorilla/mux v1.8.0
