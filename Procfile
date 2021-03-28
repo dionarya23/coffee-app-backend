@@ -1,1 +1,1 @@
-web: coffe-app-backend
+web: coffee-app-backend
