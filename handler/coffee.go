@@ -49,7 +49,7 @@ func (h *coffeeHandler) GetCoffees(w http.ResponseWriter, r *http.Request) {
 	}
 
 	formatter := coffee.FormatCoffees(coffees)
-	response := helper.APIResponse("success", http.StatusCreated, formatter)
+	response := helper.APIResponse("success", http.StatusOK, formatter)
 	json.NewEncoder(w).Encode(&response)
 }
 
