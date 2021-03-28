@@ -1,4 +1,4 @@
-module github.com/dionarya23/coffe-app-backend
+module github.com/dionarya23/coffee-app-backend
 
 // +heroku goVersion go1.15
 go 1.15
