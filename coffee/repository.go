@@ -40,7 +40,7 @@ func (r *repository) FindAll() ([]Coffee, error) {
 
 func (r *repository) FinByID(ID int) (Coffee, error) {
 	var coffee_ Coffee
-	err := r.db.Where("ID=?", ID).Find(&coffee_).Error
+	err := r.db.Where("id=?", ID).Find(&coffee_).Error
 	if err != nil {
 		return coffee_, err
 	}
