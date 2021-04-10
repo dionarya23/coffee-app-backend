@@ -2,6 +2,7 @@ package coffee
 
 type CoffeeFormatter struct {
 	ID          uint    `json:"id"`
+	Name        string  `json:"name"`
 	Price       float32 `json:"price"`
 	Thumbnail   string  `json:"thumbnail"`
 	Description string  `json:"description"`
@@ -14,6 +15,7 @@ type CoffeeFormatter struct {
 func FormatCoffee(coffee Coffee) CoffeeFormatter {
 	formatter := CoffeeFormatter{
 		ID:          coffee.ID,
+		Name:        coffee.Name,
 		Price:       coffee.Price,
 		Thumbnail:   coffee.Thumbnail,
 		Description: coffee.Description,
