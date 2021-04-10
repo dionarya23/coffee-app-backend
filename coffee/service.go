@@ -21,6 +21,7 @@ func NewService(repository Repository) *service {
 func (s *service) CreateCoffee(input CreateNewCoffeeInput) (Coffee, error) {
 	coffee_ := Coffee{}
 
+	coffee_.Name = input.Name
 	coffee_.Price = input.Price
 	coffee_.Thumbnail = input.Thumbnail
 	coffee_.Description = input.Description
@@ -68,6 +69,7 @@ func (s *service) UpdateCoffee(ID int, updatedcoffee CreateNewCoffeeInput) (Coff
 		return coffee_, errors.New("coffee not found")
 	}
 
+	coffee_.Name = updatedcoffee.Name
 	coffee_.Price = updatedcoffee.Price
 	coffee_.Thumbnail = updatedcoffee.Thumbnail
 	coffee_.Description = updatedcoffee.Description

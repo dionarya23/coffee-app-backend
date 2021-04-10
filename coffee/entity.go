@@ -4,6 +4,7 @@ import "gorm.io/gorm"
 
 type Coffee struct {
 	gorm.Model
+	Name        string  `json:"name"`
 	Price       float32 `json:"price"`
 	Thumbnail   string  `json:"thumbnail"`
 	Description string  `json:"description"`
